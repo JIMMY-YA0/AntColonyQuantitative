@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex justify-between md:justify-around items-center relative">
           {/* Navbar Start */}
           <div className="flex justify-center items-center gap-6">
-            <Image src={logo1} alt="Logo" width={128} />
+            <Image src={logo1} alt="Logo" width={96} />
             <div className="hidden md:inline-flex justify-center items-center">
               <Link href="/" className="px-1 md:px-3 py-2">
                 Home
@@ -96,7 +96,7 @@ const Navbar = () => {
             <Link href="/">中文</Link>
           </div>
           {/* mobile harmburger menu icon*/}
-          <div className="md:hidden">
+          <div className="md:hidden ml-auto">
             <button onClick={() => setMenuOpen(!menuOpen)} className="px-3 py-2 focus:outline-none">
               <svg
                 className="h-6 w-6 text-white"
@@ -133,7 +133,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link href="/" className="px-3 py-2 ">
-              Invertment Plan
+              Invertment
             </Link>
             <Link href="/" className="px-3 py-2 ">
               Arbitrage

@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="border-b test-white mx-10"></div>
 
       <div className="text-center mx-10 ">
-        <p>©2023 AntClonyQuantitative.io All right reserved</p>
+        <p>©2023 AntClony All right reserved</p>
       </div>
     </div>
   )

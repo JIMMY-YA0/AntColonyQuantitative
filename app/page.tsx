@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Layout from './layout'
-import Banner from './components/banner'
+import Banner from './components/Banner'
 
 export default function Home() {
   return (

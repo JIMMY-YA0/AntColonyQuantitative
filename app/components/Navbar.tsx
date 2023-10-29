@@ -1,15 +1,37 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import { useEffect } from 'react'
 import logo1 from '../../public/images/logo1.png'
 import Link from 'next/link'
 import { useState } from 'react'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolling, setScrolling] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const handleScroll = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 60) {
+      setScrolling(true)
+    } else {
+      setScrolling(false)
+    }
+  }
+
   return (
     <nav>
-      <div className="sticky z-20 top-0 left-0 right-0 bg-black bg-opacity-30 min-h-[52px] px-2 md:px-8 py-3 text-white">
+      <div
+        onChange={handleScroll}
+        className={`fixed z-20 top-0 left-0 right-0 bg-black ${
+          scrolling ? 'bg-opacity-30' : ''
+        } h-[60px] px-2 md:px-8 py-3 text-white`}
+      >
         <div className="flex justify-between md:justify-around items-center relative">
           {/* Navbar Start */}
           <div className="flex justify-center items-center gap-6">

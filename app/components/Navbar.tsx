@@ -151,7 +151,7 @@ const Navbar = () => {
         <div className="w-full fixed z-20 top-[60px] bg-white left-0">
           <div className="flex md:hidden shadow-xl">
             {/* Mobile navigation links */}
-            <div className="flex flex-col space-y-2 text-black">
+            <div className="flex flex-col space-y-2 my-2 text-black">
               <Link href="/" className="px-3 py-2 ">
                 Home
               </Link>

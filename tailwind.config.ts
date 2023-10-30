@@ -7,11 +7,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'banner-bg': "url('../public/images/banner_bp1.jpg')"
-      }
-    }
+    extend: {}
   },
   plugins: []
 }

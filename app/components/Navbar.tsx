@@ -8,6 +8,7 @@ import { useState } from 'react'
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolling, setScrolling] = useState(false)
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
         <div className="flex justify-between md:justify-around items-center relative">
           {/* Navbar Start */}
           <div className="flex justify-center items-center gap-6">
-            <Image src={logo1} alt="Logo" width={96} />
+            <Image src={logo1} alt="Logo" width={96} className="mx-2" />
             <div className="hidden md:inline-flex justify-center items-center">
               <Link href="/" className="px-1 md:px-3 py-2">
                 Home
@@ -63,7 +64,7 @@ const Navbar = () => {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                         clip-rule="evenodd"
                       />

@@ -9,8 +9,8 @@ import Icon_tech4 from '../../public/images/icon-tech-pf4.png'
 
 const Hero = () => {
   return (
-    <div className="my-10">
-      {/* Market pain */}
+    <div className="my-10 px-2">
+      {/* Market pain points & solutions */}
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col items-center justify-center space-y-2 px-8 py-4 mb-6 relative">
           <h2 className="text-3xl font-black text-center">Market Pain Points and Solutions</h2>
@@ -42,11 +42,14 @@ const Hero = () => {
               错过机会
             </dd>
           </dl>
-          <div className="hidden md:block">
-            <Image src={Icon_down} alt="" width={31} height={44} className="mb-10" />
-          </div>
-          <div className="block md:hidden my-auto">
-            <Image src={Icon_down} alt="" width={31} height={44} className="mr-2 -rotate-90" />
+          <div className="block my-auto px-2">
+            <Image
+              src={Icon_down}
+              alt=""
+              width={31}
+              height={44}
+              className="-rotate-90 md:mb-10 md:mt-1 md:rotate-0"
+            />
           </div>
           <dl className="w-full flex flex-col md:flex-row justify-evenly items-center border-dashed border-2 border-[#ccc] px-4 lg:px-8 py-4 relative">
             <dt className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-[whitesmoke] p-2">
@@ -67,9 +70,9 @@ const Hero = () => {
           </dl>
         </div>
       </div>
-      {/* Why us */}
-      <div className="w-full lg:w-[70%] mx-auto bg-white py-10 my-10">
-        <div className="flex flex-col items-center justify-center space-y-2 px-8 py-4 mb-6 relative">
+      {/* Why choose us */}
+      <div className="w-full lg:w-[70%] mx-auto bg-white py-10 my-10 px-2">
+        <div className="flex flex-col items-center justify-center space-y-2 px-8 py-4 mb-20 relative">
           <h2 className="text-3xl font-black text-center">Why Choose Us</h2>
           <Image src={icon_ui2} alt="" width={149} height={14} />
         </div>
@@ -108,6 +111,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* Invest Button */}
       <div className="flex justify-center items-center">
         <button className="border-2 text-white bg-[#209cee] text-lg p-2 rounded-md">
           Invest Now

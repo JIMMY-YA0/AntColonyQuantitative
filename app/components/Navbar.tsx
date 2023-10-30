@@ -25,10 +25,10 @@ const Navbar = () => {
   }
 
   return (
-    <nav>
+    <nav className="relative">
       <div
         onChange={handleScroll}
-        className={`fixed z-50 top-0 left-0 right-0 bg-black ${
+        className={`fixed z-20 top-0 left-0 right-0 bg-black ${
           scrolling ? 'bg-opacity-30' : ''
         } h-[60px] px-2 md:px-8 py-3 text-white`}
       >
@@ -148,38 +148,40 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="flex md:hidden shadow-xl">
-          {/* Mobile navigation links */}
-          <div className="flex flex-col space-y-2 text-black">
-            <Link href="/" className="px-3 py-2 ">
-              Home
-            </Link>
-            <Link href="/" className="px-3 py-2 ">
-              Invertment
-            </Link>
-            <Link href="/" className="px-3 py-2 ">
-              Arbitrage
-            </Link>
-            <Link href="/" className="px-3 py-2 ">
-              Coins
-            </Link>
-            <Link href="/" className="ml-3 px-3 py-2 ">
-              Coins
-            </Link>
-            <Link href="/" className="ml-3 px-3 py-2 ">
-              exchange
-            </Link>
-            <Link href="/" className="ml-3 px-3 py-2 ">
-              News
-            </Link>
-            <Link href="/" className="px-3 py-2 ">
-              <button className="inline-block bg-[#3273dc] py-1 rounded-3xl p-3 text-white">
-                Login/Register
-              </button>
-            </Link>
-            <Link href="/" className="px-3 py-2 ">
-              中文
-            </Link>
+        <div className="w-full fixed z-20 top-[60px] bg-white left-0">
+          <div className="flex md:hidden shadow-xl">
+            {/* Mobile navigation links */}
+            <div className="flex flex-col space-y-2 text-black">
+              <Link href="/" className="px-3 py-2 ">
+                Home
+              </Link>
+              <Link href="/" className="px-3 py-2 ">
+                Invertment
+              </Link>
+              <Link href="/" className="px-3 py-2 ">
+                Arbitrage
+              </Link>
+              <Link href="/" className="px-3 py-2 ">
+                Coins
+              </Link>
+              <Link href="/" className="ml-3 px-3 py-2 ">
+                Coins
+              </Link>
+              <Link href="/" className="ml-3 px-3 py-2 ">
+                exchange
+              </Link>
+              <Link href="/" className="ml-3 px-3 py-2 ">
+                News
+              </Link>
+              <Link href="/" className="px-3 py-2 ">
+                <button className="inline-block bg-[#3273dc] py-1 rounded-3xl p-3 text-white">
+                  Login/Register
+                </button>
+              </Link>
+              <Link href="/" className="px-3 py-2 ">
+                中文
+              </Link>
+            </div>
           </div>
         </div>
       )}

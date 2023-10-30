@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav>
       <div
         onChange={handleScroll}
-        className={`fixed z-20 top-0 left-0 right-0 bg-black ${
+        className={`fixed z-50 top-0 left-0 right-0 bg-black ${
           scrolling ? 'bg-opacity-30' : ''
         } h-[60px] px-2 md:px-8 py-3 text-white`}
       >

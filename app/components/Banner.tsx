@@ -1,9 +1,15 @@
 import Image from 'next/image'
-import slide from '../../public/images/banner_bp1.jpg'
+import slider from '../../public/images/banner_bp1.jpg'
 const Banner = () => {
   return (
-    <div className="top-[60px] relative bg-banner-bg bg-center">
-      <div className="h-96 max-w-screen-2xl mx-auto flex flex-col justify-center items-center"></div>
+    <div className="w-screen">
+      <Image
+        src={slider}
+        alt="Banner"
+        width={1920}
+        height={750}
+        className="max-h-[40vh] object-cover"
+      />
     </div>
   )
 }
